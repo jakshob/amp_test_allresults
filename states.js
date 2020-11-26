@@ -5,7 +5,10 @@
 function uiStart() {
   uiUpdateSimple(); //Hvad gør denne
 
+  
+
   background(255);
+  rect(0,0,20,20);
   var scale = 0.8;
   imageMode(CENTER);
   image(designs[0], 0.5 * width, 0.5 * height, scale * width, scale * designs[0].height * width / designs[0].width);
