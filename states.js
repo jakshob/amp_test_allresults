@@ -203,6 +203,7 @@ function uiFinishLoop() {
     if(pickerCount < 3) pickerCount++;
     else pickerCount = 0;
 
+    console.log(pickerCount);
 
     var resultsString = "";
 
