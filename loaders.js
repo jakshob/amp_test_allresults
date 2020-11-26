@@ -16,6 +16,7 @@ function loadDesign(){
   designs.push(loadImage('assets/design/clip_p.png'));
   designs.push(loadImage('assets/design/tape_p.png'));
   designs.push(loadImage('assets/design/testscreen2.png'));
+  designs.push(loadImage('assets/design/piechart.png'));
   
  
 }

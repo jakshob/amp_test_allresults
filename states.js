@@ -177,7 +177,9 @@ function uiFinishLoop() {
     else if(results[0].winner===undefined) text("Du er knyttet til naturen.\nHerunder kan du se hvor meget du kan lide forskellige typer landskaber i forhold til hinanden.",windowWidth / 3,(windowHeight / 4) + 30);
       else text("Du er ikke særligt knyttet til naturen.\nHerunder kan du se hvor meget du kan lide forskellige typer landskaber i forhold til hinanden.",windowWidth / 3,(windowHeight / 4) + 30);
     //PIEE
-    results = pieChart(windowWidth / 4, resultsCopy);
+
+    image(designs[8], (windowWidth / 3) - 40, (windowHeight / 4), designs[6].width * 1.3, designs[6].height * 1.3);
+    
   } 
   else {
     imageMode(CORNER);
@@ -198,7 +200,7 @@ function uiFinishLoop() {
 
     if (picker === 0) {isPoetry = false; sentenceDone = createSentencesOn(results);}
     if (picker === 1) {isPoetry = true; sentenceDone = createSentencesOn(results);}
-    if (picker === 2) {isPoetry = undefined; sentenceDone = createSentencesOn(results);}
+    if (picker === 2) {isPoetry = undefined; }
 
     if(pickerCount < 2) pickerCount++;
     else pickerCount = 0;
