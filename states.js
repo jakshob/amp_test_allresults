@@ -178,7 +178,7 @@ function uiFinishLoop() {
       else text("Du er ikke særligt knyttet til naturen.\nHerunder kan du se hvor meget du kan lide forskellige typer landskaber i forhold til hinanden.",windowWidth / 3,(windowHeight / 4) + 30);
     //PIEE
 
-    image(designs[8], (windowWidth / 3) - 40, (windowHeight / 4));
+    image(designs[8], (windowWidth / 3) - 40, (windowHeight / 4)+30);
     
   } 
   else {
