@@ -196,9 +196,9 @@ function uiFinishLoop() {
 
     picker = pickerCount;
 
-    if (picker === 0) isPoetry = false;
-    if (picker === 1) isPoetry = true;
-    if (picker === 2) isPoetry = undefined;
+    if (picker === 0) {isPoetry = false; createSentencesOn(results);}
+    if (picker === 1) {isPoetry = true; createSentencesOn(results);}
+    if (picker === 2) {isPoetry = undefined; createSentencesOn(results);}
 
     if(pickerCount < 3) pickerCount++;
     else pickerCount = 0;
