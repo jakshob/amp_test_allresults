@@ -7,12 +7,14 @@ let currentData;
 var angles = [];
 var resultsCopy = [];
 
+var pickerCount=0;
+
 var sentenceDone = "";
 // Start and timers
 let startText = "";
 let timer = 3;
 
-var isPoetry = undefined;
+var isPoetry = true;
 var picker = 0;
 
 var results;
@@ -20,7 +22,7 @@ var counterArr;
 
 //AMP Variables
 
-counter = 0;
+counter = 40;
 
 counterImages = 0;
 
