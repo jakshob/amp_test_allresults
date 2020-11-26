@@ -196,12 +196,13 @@ function uiFinishLoop() {
 
     picker = pickerCount;
 
-    if (picker === 0) {isPoetry = false; createSentencesOn(results);}
-    if (picker === 1) {isPoetry = true; createSentencesOn(results);}
-    if (picker === 2) {isPoetry = undefined; createSentencesOn(results);}
+    if (picker === 0) {isPoetry = false; sentenceDone = createSentencesOn(results);}
+    if (picker === 1) {isPoetry = true; sentenceDone = createSentencesOn(results);}
+    if (picker === 2) {isPoetry = undefined; sentenceDone = createSentencesOn(results);}
 
     if(pickerCount < 3) pickerCount++;
     else pickerCount = 0;
+
 
     var resultsString = "";
 
