@@ -16,14 +16,8 @@ function uiStart() {
 
   if (mouseIsPressed && mouseX < windowWidth && mouseX > windowWidth * 0.75 && mouseY < windowHeight && mouseY > 100) {
 
-    //RANDOM POETRY STATE
-    picker = Math.floor(Math.random() * 3); 
+   
 
-    if (picker === 0) isPoetry = false;
-    if (picker === 1) isPoetry = undefined;
-    if (picker === 2) isPoetry = true;
-
-    console.log(isPoetry);
     fullScreenToggle();
     state = 5;
 
@@ -170,7 +164,7 @@ function uiFinishLoop() {
 
   var url = "https://docs.google.com/forms/d/e/1FAIpQLSeh4I4H7LXqmQLTQivUBkYLsjPBWzCHWzmTZ6UaT5C05ulGAg/viewform?usp=pp_url&entry.86019745=";
 
-    textSize(14);
+  textSize(14);
   textFont("Helvetica");
   text("I denne psykologiske test har du reageret på symboler.\nUnderbevidst har du reageret på de landskaber der blev vist inden symbolerne.\nDette er resultatet: ", windowWidth / 3, (windowHeight / 4) - 40);
   
@@ -195,7 +189,16 @@ function uiFinishLoop() {
 
   uiContainerStart((windowWidth / 2) - 100, windowHeight * 0.9, 300);
   textFont("Helvetica");
-  if (uiButton("Klik her for at komme til spørgeskema").clicked) {
+  if (uiButton("Klik her for at skifte resultat").clicked) {
+
+    picker = pickerCount;
+
+    if (picker === 0) isPoetry = false;
+    if (picker === 1) isPoetry = true;
+    if (picker === 2) isPoetry = undefined;
+
+    if(pickerCount < 3) pickerCount++;
+    else pickerCount = 0;
 
     var resultsString = "";
 
@@ -208,7 +211,7 @@ function uiFinishLoop() {
     }
 
 
-    window.open(url + encodeURIComponent(resultsString), "target=_blank");
+    
 
 
   }
