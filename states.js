@@ -200,7 +200,7 @@ function uiFinishLoop() {
     if (picker === 1) {isPoetry = true; sentenceDone = createSentencesOn(results);}
     if (picker === 2) {isPoetry = undefined; sentenceDone = createSentencesOn(results);}
 
-    if(pickerCount < 3) pickerCount++;
+    if(pickerCount < 2) pickerCount++;
     else pickerCount = 0;
 
     console.log(pickerCount);
